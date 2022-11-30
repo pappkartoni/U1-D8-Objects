@@ -43,7 +43,7 @@ console.log(thisMe);
  Create a second object with another name, surname, email address and verify that this object has a different email address than the previous one.
 */
 
-thisNotMe = {
+let thisNotMe = {
     name:       "Norian",
     surname:    "Whyer",
     email:      "sir.fakington@gmail.com",
