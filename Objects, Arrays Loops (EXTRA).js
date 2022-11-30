@@ -34,7 +34,7 @@ for (let i = 0; i < numArray.length; i++) { // also this
     if (i == 0) {
         maxValue = numArray[i];
     } else {
-        maxValue = (numArray[i] > maxValue ? numArray[i] : maxValue); // O(n^2) 👎
+        maxValue = (numArray[i] > maxValue ? numArray[i] : maxValue); // 👎
     };
 };
 
