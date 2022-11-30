@@ -98,18 +98,18 @@ console.log(car5);
  Create a variable called carsForRent and assign to it an array containing all the cars from the previous exercise.
 */
 
-let carsToRent = [car1, car2, car3, car4, car5];
+let carsForRent = [car1, car2, car3, car4, car5];
 
 /* EXERCISE 10
  Remove the first and the last car from the carsForRent array.
 */
 
 console.log("\nRemove the first car, then the last:");
-carsToRent.shift(); //first
-console.log(carsToRent);
+carsForRent.shift(); //first
+console.log(carsForRent);
 
-carsToRent.pop(); //last
-console.log(carsToRent);
+carsForRent.pop(); //last
+console.log(carsForRent);
 
 /* EXERCISE 11
  Print to the console the type of the car variable you created before, as well as the types of its licensePlate and brand properties.
@@ -130,9 +130,9 @@ carsForSale.push(car1);
 carsForSale.push(car2);
 carsForSale.push(car3);
 
-let totalCarsWrong = carsToRent.concat(carsForSale);
+let totalCarsWrong = carsForRent.concat(carsForSale);
 console.log("concat gives ", totalCarsWrong.length); //due to car 2 and 3 being in both. The "real" result should be car1,car2,car3,car4
-let totalCars = [...new Set([...carsToRent, ...carsForSale])]; // Recommended way to do this apparently due to being O(n) vs O(n^2) when iterating and checking for duplicates
+let totalCars = [...new Set([...carsForRent, ...carsForSale])]; // Recommended way to do this apparently due to being O(n) vs O(n^2) when iterating and checking for duplicates
 console.log("Total cars available are:", totalCars.length); // And I know technically the exercise was to get the number only
 
 /* EXERCISE 13
