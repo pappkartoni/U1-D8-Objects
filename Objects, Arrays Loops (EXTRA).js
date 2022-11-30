@@ -26,7 +26,8 @@ console.log(reversed);
 let numArray = [1, 4, 5, 45, -2, 0];
 console.log("\nHere's our Array", numArray);
 
-let maxValue = Math.max(...numArray); //  Thanks Math
+let maxValue = null;
+//maxValue = Math.max(...numArray); //  Thanks Math
 //console.log(maxValue);
 
 for (let i = 0; i < numArray.length; i++) { // also this
@@ -77,9 +78,8 @@ console.log("evenArray", evenArray);
 */
 
 let oddArray = numArray.concat(); // Technically this should not be saved in another array but in the original one but I chose to do this anyway because I wanted to keep the numArray to be able to reuse it later
-console.log(oddArray);
+
 for (let i = oddArray.length; i > 0; i--) { // First idea I had to fix the indexing problem so here we are 
-    console.log(i);
     if (oddArray[i] % 2 === 0) {
         oddArray.splice(i, 1);
     };
@@ -98,7 +98,7 @@ let smStrng = ""; // = someString.replace(/[aeiou]/gi, '');   // also this shoul
 
 for (let i = 0; i < someString.length; i++) {
     smStrng += (["a", "e", "i", "o", "u"].includes(someString.charAt(i))) ? "" : someString.charAt(i);
-}
+};
 
 console.log("\nRemove all vowels from a given string:");
 console.log(someString);
@@ -111,7 +111,7 @@ console.log(smStrng);
 let incrArray = []; // same thing as above, the way the task is worded i should operate on the original array
 for (let i = 0; i < numArray.length; i++) {
     incrArray.push(numArray[i]+1);    
-}
+};
 
 console.log("\nIncrement all array elements by one:");
 console.log(numArray);
@@ -126,8 +126,8 @@ let stringArray = ["it's", "funny", "how", "significance", "makes", "a", "differ
 let lengthsArray = [];
 for (let i = 0; i < stringArray.length; i++) {
     lengthsArray.push(stringArray[i].length); // please no emojis or complex chinese characters
-}
+};
 
-console.log("\nGet the lengths of every string in an array:")
+console.log("\nGet the lengths of every string in an array:");
 console.log(stringArray);
 console.log(lengthsArray);
