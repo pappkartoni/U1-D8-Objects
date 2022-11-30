@@ -69,6 +69,7 @@ for (let i = 0; i < numArray.length; i++) {
     };
 };
 
+console.log("\nGet even elements");
 console.log("evenArray", evenArray);
 
 /* EXTRA 5
@@ -93,13 +94,13 @@ console.log(oddArray);
 */
 
 let someString = "This is a big ol string containing all the vowels I could remember...";
-let smStrng = ""; // = someString.replace(/[aeiou]/gi, '');
+let smStrng = ""; // = someString.replace(/[aeiou]/gi, '');   // also this should also not be saved in another variable 
 
 for (let i = 0; i < someString.length; i++) {
     smStrng += (["a", "e", "i", "o", "u"].includes(someString.charAt(i))) ? "" : someString.charAt(i);
 }
 
-console.log("Remove all vowels from a given string:");
+console.log("\nRemove all vowels from a given string:");
 console.log(someString);
 console.log(smStrng);
 
@@ -107,7 +108,7 @@ console.log(smStrng);
  Write a piece of code for increasing all the numerical values in a array by 1.
 */
 
-let incrArray = []; // same thing as above
+let incrArray = []; // same thing as above, the way the task is worded i should operate on the original array
 for (let i = 0; i < numArray.length; i++) {
     incrArray.push(numArray[i]+1);    
 }
